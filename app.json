@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "fire-movies",
-    "slug": "fire-movies",
+    "slug": "firemovies",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#F66902"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -23,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9899dd1f-58f0-4ad1-b84c-475b9f28bcce"
+      }
+    },
+    "owner": "siemen_subbaiah"
   }
 }

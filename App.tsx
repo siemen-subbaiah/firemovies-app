@@ -4,15 +4,15 @@ import {
   createNavigationContainerRef,
 } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Discover from './screens/Discover';
-import Favourites from './screens/Favourites';
-import Account from './screens/Account';
-import About from './screens/About';
+import Discover from './src/screens/Discover';
+import Favourites from './src/screens/Favourites';
+import Account from './src/screens/Account';
+import About from './src/screens/About';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Image, StatusBar } from 'react-native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import HomeStack from './screens/HomeStack';
-import AuthState from './context/AuthState';
+import HomeStack from './src/screens/HomeStack';
+import AuthState from './src/context/AuthState';
 
 export type RootTabParamList = {
   HomeStack: undefined;
@@ -84,7 +84,7 @@ const App = () => {
               options={{
                 headerTitle: () => (
                   <Image
-                    source={require('../assets/logo.png')}
+                    source={require('./assets/logo.png')}
                     height={50}
                     width={10}
                   />
